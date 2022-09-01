@@ -1,6 +1,6 @@
 public class multilingualJava {
 
-    public static void ain(String args[]) {
+    public static void main(String args[]) {
 
         System.out.println("Selam Dünya");
         System.out.println("Hello World");

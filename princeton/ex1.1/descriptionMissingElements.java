@@ -31,10 +31,10 @@ Q5 Describe what happens if, in HelloWorld.java, you misspell
 Q6 I typed in the following program. It compiles fine, but when I execute it, 
 I get the error java.lang.NoSuchMethodError: main. What am I doing wrong?*/
 
-public class Hello {
-   public static void main() {
-      System.out.println("Doesn't execute");   
-   }
-}
+//public class Hello {
+//   public static void main() {
+//      System.out.println("Doesn't execute");   
+//   }
+//}
 
 // String[] args is not included therefore the function is not fully defined and cannot execute.

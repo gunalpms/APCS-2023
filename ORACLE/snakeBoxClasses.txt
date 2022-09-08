@@ -1,0 +1,72 @@
+Our case is to create several classes to design a data transportation system within a corporate office
+
+Specifically, we need to digitalize the data transfer concerning orders. These orders are for cardboard
+boxes, therefore things that should be considered are:
+
+- Box sizes
+- Box colors (although it is cardboard they might be dyed)
+- Amount
+- Receipent data
+- Cost of materials
+- Total cost including labor
+- Delivery address  
+- Shipping cost
+- Delivery date / time
+- When a carboard is produced
+- Where is the cardboard stored in the warehouse
+- Ordering materials for the cardboard
+
+The question requires 3 objects and for every object 3 methods and 3 attributes are required
+A total of 2 preconditions and 2 postconditions are also required
+
+Object 1: Warehouse
+ 
+Methods: - addCardboardBox(cardBoard)
+         - removeCardboardBox(cardBoard)
+         - storeMaterials(material object)
+         - removeMaterials(material object)
+
+Attributes: - totalCardboardBoxes
+            - totalStorageSpace
+            - totalMaterialCaount
+            - remainingStorage
+
+Object 2: CardboardBox:
+
+Methods: - change/add receipent(Receipent)
+         - change/add delivery time, address etc. (Delivery)
+         - modifyProperties(Size, color, shape, price)
+
+Attributes: - price
+            - size
+            - shape
+            - color
+            - cost
+            - delivery time / address
+            - amountOfSameBoxes
+
+Object 3: Material:
+
+Methods: - change/add Amount(materialType)
+         - modifyProperties(color, shape, size, price)
+         - calculateBoxAmount(CardboardBox) - Checks the maximum amount of a predefined box that can
+                                              be produces with the existing materials.
+
+Attributes: - Color
+            - Shape
+            - Size
+            - Price
+            - Provider
+            - Amount
+            - LocationInStorage etc.
+
+Possible preconditions and postconditions:
+
+- A precondition to check whether a materialType (subclass of material) exists to change its properties
+- A precondition to check if every material is present for calculateBoxAmount in order to 
+  prevent inefficient calculations
+
+- A postcondition to check if the price of a CardboardBox falls below a predefined profit constant
+  such that it warns the user if they want to set the price under its cost
+- A postcondition to check if a negative amount of a Material is remaining after deducting a specific 
+  number from the storage. If it is negative it doesn't allow the user to deduct that much.

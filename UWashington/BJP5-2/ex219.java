@@ -1,0 +1,1 @@
+// bu soruyu bos birakiyorum cunku nasi yapicagima dair hicbir fikrim mevcut degil

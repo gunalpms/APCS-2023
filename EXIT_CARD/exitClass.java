@@ -14,15 +14,15 @@ public class exitClass {
         private String isim;
 
         public kedi() {
-            int yas = 0;
-            int kilo = 0;
-            String isim = "kilcik";
+            yas = 0; // birtakim attributelarin standart degeri
+            kilo = 0;
+            isim = "kilcik";
         }
 
-        public kedi(int y, int k, String i) {
-            int yas = y;
-            int kilo = k;
-            String isim = i;
+        public kedi(int y, int k, String i) { // paremetreye gore bu attributelarin verilmesi
+            yas = y;
+            kilo = k;
+            isim = i;
         }
 
         private void zipla(double m) {
@@ -37,9 +37,8 @@ public class exitClass {
             // kedinin uyuyup uyumadigini kontrol etmek icin birtakip operasyonlar yap
             // mesela nabzina bak, gozu kapali / acik vs.
             return false;
-        }
-
-
-    }
+        }       
+    } // kedi bitis
     
+    kedi misty = new kedi(); // instance yaratildi
 }

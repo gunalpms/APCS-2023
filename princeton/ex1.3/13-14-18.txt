@@ -1,0 +1,10 @@
+The questions 13-14-18 await an explanation on already existing code
+
+Q13) 987654321 = m and 0 = n after the code executes. It puts the reverse of the first int 
+to the second int because it multiplies each digit by 10 such that it stays on the "inverse nth digit"
+
+Q14) It prints out fib numbers until the 15th fib number (incl.) It employs a recursive tactic
+without actually recursively calling a funciton. F becomes the n-1st number and g becomes the n-2nd number
+
+Q18) answer d is correct because it casts the denominator value to a double which in return
+converts the division to a double and the sum to a double. If it stayed int it could have caused overflow.

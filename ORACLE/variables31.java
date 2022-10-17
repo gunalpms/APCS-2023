@@ -3,10 +3,20 @@ public class variables31 {
     public static void main(String[] args) {
         
         System.out.println("odev nerede?");
-        // Exercise 1 icin gereken jar dosyasina ulasamiyorum o yuzden bos
-        // Exercise 2 icin gereken java dosyasina ulasamiyorum o yuzden bos
-        // Exercise 3 icin gereken java dosyasi da maalesef yok o yuzden yine bos
-        // Acikcasi eksik odev yapmak istemistim ancak ortada yapabilecegim bir sey ne yazik ki yok
+        // Exercise 1'de cesitli veri tipleri isteniyor
+        // double, int ve string 
+
+        // Exercise 2'de bir degiskenin degeri degisince o degiskenin printte verdigi
+        // ciktinin degistigini gosteriyor
+
+        // Exercise 3'te cestili syntax hatalarini duzeltiyoruz
+        // ornek olarak zaten tipi tanimlanmis degiskene yeniden tip atamaya calismak
+        // veya tipin alamayacagi bir veriyi o tipte bir degiskene vermek
+
+        // degisken isimleri sayiyla baslayamaz
+        // 1degisken X degisken1 OK
+        
+        
     }
-    
 }
+    

@@ -1,0 +1,8 @@
+false
+true
+Steph Smith, You can get your driver's license
+Barb , You are not eligible to apply for a driver's license
+true
+false
+Steph Smith and Steph Jones are NOT duplicates.
+Steph Smith and Steph Smith are duplicates.

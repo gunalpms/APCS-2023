@@ -1,0 +1,5 @@
+The name of this pet is muhammed,  and its type is cat and the number of cats is 1
+The name of this pet is ahmad,  and its type is dog and the number of dogs is 1
+Number of dogs: 1 Number of cats: 1 Number of other pets: 0 Total number of pets: 2
+Welcome to the pet object class (?)
+The roots are 1.6972243622680054 and 5.302775637731995

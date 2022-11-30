@@ -1,8 +1,8 @@
 public class People {
 
-    String firstName;
-    String lastName;
-    int age;
+    private String firstName;
+    private String lastName;
+    private int age;
     // default constructor isim, soyisim ve yaş bilgilerini boş string / 0 olarak yaratır 
     public People() {
 

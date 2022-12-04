@@ -1,0 +1,4 @@
+/*
+ * comparison operators look for object references therefore string methods should be used to compare
+ * string objects
+ */

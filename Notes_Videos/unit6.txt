@@ -1,0 +1,74 @@
+/* 
+
+arrayler primitive type'ların yanısıra reference type da tutabilirler.
+length, bir array objesinin final public bir attribute'udur. 
+
+int [] listone = new int[5]
+syntaxı ile 5 uzunluğunda bir integer arrayi yaratılabilir
+listone arrayin kendisi değildir, bu array objesine bir referanstır.
+
+listone[1] = 5
+syntaxı ile 1. indexteki elemana 5 değerini atayabiliriz.
+
+array'in sahip olabileceği (0'dan length-1'e kadar) index sayısından başka bir index sayısına
+erişim sağlanmaya çalışıldığında ArrayIndexOutOfBoundsException istisnası yaratılır.
+
+listone[6] = 12
+yukarıdaki kod ArrayIndexOutOfBoundsException istisnası yaratır çünkü array'in indexleri 0-4 (dahil) arasındadır.
+
+listenin kendisini sout(listone) ile printlemeye çalışmak hashcode'unu verir
+
+referans tipinde bir array yaratıldığında ve bir uzunluk atandığında indexlerde otomatik olarak objeler yaratılmaz,
+indexlerdeki veri tipi null'dur.
+
+mesela String strarr = new String[2] kodundaki strarr'ın 0 ve 1 indexlerindeki veri tipi null olarak başlatılır.
+
+integer arraylerinde bu değer 0'dır
+double arraylerinde bu değer 0.0'dır
+boolean arraylerinde bu değer false'tır
+
+default değerlerle değil de kullanıcı tarafından verilecek değerlerle bir array oluşturulmak istendiğinde aşağıdaki
+syntax kullanılır. sadece primitive değil, reference type'larla da bu yapılabilir
+
+int [] listone = {1, 1, 2, 3, 5, 8}
+
+n elemanlı bir listenin tüm elemanlarına sırayla for loop ile şu şekilde ulaşabiliriz:
+
+type [] list = new type [n]
+for (int i = 0; i < list.length; i++) {
+    list[i] // buraya istediğimizi koyabiliriz
+}
+
+for each stilinde bir loop javada şöyle yapılır
+
+for (int a: list) {
+    sout(a);
+}
+
+listedeki her elemana a değeri verip printler, tüm elemanlara ulaşmanın kısa yoludur.
+
+bir arraydeki en büyük veya en küçük değeri (int veya double) bulmak için aşağıdaki gibi bir algoritma kullanılabilir
+
+int[] list = new int [n]
+int max = list[0];
+int min = list[0];
+
+for (int i = 1; i<list.length; i++) {
+    if (list[i] > max) {max = list[i];} // bu büyük için
+    if (list[i] < min) {min = list[i];} // bu küçük için
+}
+
+foreach stili bir şey kullanmak istersek:
+
+int[] list = new int [n]
+int max = list[0];
+int min = list[0];
+
+for (int i : list) {
+    if (i > max) {max = list[i];} // bu büyük için
+    if (i < min) {min = list[i];} // bu küçük için
+}
+
+
+
+*/

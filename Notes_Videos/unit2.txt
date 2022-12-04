@@ -1,0 +1,45 @@
+/*
+ * When multiple variables refer to the same instance, a modification on one of the variables will 
+ * effect the same object with other variables causing the object to change for all references
+ * 
+ * constructors with different types of variables or different amount of variables can be created 
+ * using a concept called overloading. This allows us to create instances of the same class with default
+ * values or with some values missing.
+ * 
+ * when an instance with no value is created, the reference type refers to null in the memory
+ */
+
+ /*
+ * a method signature is a method definition (parameters and tasks)
+ * 
+ * when an object name is referencing to null, calling a method on said object will create a
+ * null pointer exception 
+ * 
+ * method overloading is when a method with the same name has multiple definitions with 
+ * a different amount of parameters and/or different data types for the parameters
+ * 
+ * when a method has a return type the result of the method can be stored in a variable or be used
+ * in an expression
+ * 
+ * methods with return types must return a value with the same type 
+ * 
+ */
+ /*
+ * String objects are immutable. Therefore, string methods cannot modify a string instance
+ * 
+ * We can use the + operator to concatenate (verb to describe combining data) strings
+ * 
+ * 
+ */
+ /*
+ * These wrapper classes are apparently useful with array lists(?) but alone I have not seen a purpose
+ * 
+ * Autoboxing and unboxing processes are done automatically by the compiler
+ * 
+ * The math class is static which means that they belong to a class, not an object
+ * 
+ * Therefore they do not need an instance variable to run
+ * 
+ * Math.random is not inclusive such that the function itself never returns 1. (returns limit)
+ *
+ */

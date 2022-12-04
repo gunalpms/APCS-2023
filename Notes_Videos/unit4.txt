@@ -1,0 +1,7 @@
+/*
+ * strinstance.contains("string") methodu çağrıldığı string argümandaki 
+ * stringi içeriyorsa true içermiyorsa false döndürür
+ * 
+ * bir döngünün hangi koşullarda çalıştığı ve ne kadar kez çalışacağı gibi özelliklerini 
+ * incelemenin adı "informal code analysis"tir.
+ */

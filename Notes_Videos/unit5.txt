@@ -1,0 +1,15 @@
+/* 
+ * data encapsulation = veriyi istenen scope'lar hariç erişime kapatmaya verilen isim. 
+ * güvenlik ve namespace kirletmemek için kullanılıyor.
+ *
+ * static method / variable ise bir instance için değil o type için yaratılır. 
+ * dolayısı ile static metotların instance variable'lara erişimi yoktur (ama getter kullanabilirler). 
+ * static variable ise her bir instance bir variable'ı aynı tutacaksa o değişkenin hafızada 
+ * sadece 1 kere yaratılması için kullanılır (o class'ın instancelarının ortak değişkeni diyebiliriz)
+ *
+ * this keywordü fonksiyonun kullanıldığı objenin ögelerini çağırmak için kullanılır. 
+ * her zaman gerekli değildir. this ile bir field veya methoda ulaşmak için o field veya method'un 
+ * this'in kullanıldığı class'ta yer alması lazımdır. parametre ile instance variable isimleri aynı 
+ * ise this kullanarak instance variable'ı belirtmek şarttır. yoksa compiler neyi neye atayacağını bilemez. 
+ * veya static bir metodu class içerisinden çağırıyorsak instance'ı parametre olarak kullanabilmek için de this yararlıdır.
+ */

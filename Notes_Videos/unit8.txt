@@ -1,0 +1,28 @@
+/*
+
+A 2D array can be defined as an array of arrays.
+
+It is a way to store multiple data concerning one data element of a single array.
+
+For example, an array of 4 cats could hold 3 attributes for each cat, for instance their name, age and color
+
+Arrays in which there are the same amount of elements for each "row" are called rectangular arrays.
+
+Declaration:
+
+datatype[][] name = new datatype[row_count][column_count];
+
+Or:
+
+name = {
+    {elements}, {some_more_elements}, {there_really_is_no_limit}
+}
+
+In a rectangular array, to get the length of the columns, by convention, the first array is used
+
+int len_column = array[0].length
+
+Accessing the elements of a 2d array is nothing different than accessing the elements of a
+1D array.
+
+*/

@@ -9,15 +9,13 @@ public class webex27 {
             {13, 14, 15, 16}
         };
 
-        // HAS NOT BEEN TESTED FOR EVEN LENGTH MATRICES!
+        // HAS NOT BEEN TESTED FOR ODD LENGTH MATRICES!
 
         // I don't even know how this works but I will do my best
         // To do a spiral, for every length, one less of that length must be iterated
         int a = test_arr.length - 1; // will change every iteration to set bounds
         int l = a; // length var for iterator
         int z = (test_arr.length + 1) / 2; // determines the number of "roundabouts"
-        System.out.println(a);
-        System.out.println(z);
 
         // for every roundabout
         for (int d = 0; d<z; d++, a--) {

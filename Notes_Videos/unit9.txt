@@ -1,0 +1,32 @@
+/*
+
+a subclass is a class that implements the attributes or methods of its parent class, aka superclass
+
+all subclasses can have one superclass but a superclass can have multiple subclasses
+
+a subclass will "inherit" every property of its superclass
+
+when using the extends keyword, it is not possible to "skip" a class in the middle
+
+for example if the classes are linked as a-b-c, c cannot extend a since there is b in the middle
+
+constructors are not inherited unless specified with the keyword super
+
+by default, the constructor of the subclass will call the no argument constructor of its superclass
+before proceeding with its own construction of the object of the subclass.
+
+super(arg, arg...); 
+
+the above could be used to call the constructor of the superclass using arguments
+it must be in the first line of the constructor since the call hierarchy goes up and it comes 
+to the "home" subclass the latest.
+
+a subclass cannot directly access the private data fields of its superclass
+needs to use getter or setter functions to access/modify the private variables
+
+in other words, inheritance only works with public properties, not private!
+
+overriding is the process of rewriting a method inherited from a superclass within a subclass
+it is only used when method signatures clash.
+
+*/

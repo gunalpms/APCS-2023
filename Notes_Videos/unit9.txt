@@ -29,4 +29,23 @@ in other words, inheritance only works with public properties, not private!
 overriding is the process of rewriting a method inherited from a superclass within a subclass
 it is only used when method signatures clash.
 
+to call a method from the superclass, the following syntax can be used:
+
+super.method(params)
+
+polymorphism is a design pattern in which a reference variable can refer to an object in its own class
+and an object form one of its superclasses. this is especially useful when the type of an object
+that would be added to a collection can't be known beforehand. example:
+
+suppose that x, y and z are subclasses of class a
+
+a[] ourList = new a[3];
+a[0] = x;
+
+this is perfectly valid since a is being extened by the type/class x and therefore a variable
+refering to the type x can be of type a. this would also be true for the types y and z in this example.
+
+
+
+
 */

@@ -45,7 +45,42 @@ a[0] = x;
 this is perfectly valid since a is being extened by the type/class x and therefore a variable
 refering to the type x can be of type a. this would also be true for the types y and z in this example.
 
+to call a method of a polymorphic object from its subclass without its signature existing in the superclass,
+we can cast the superclass type variable that references a subclass, to the subclass
 
+for example:
+
+b extends a
+
+b has a method that does not exist in a
+
+if a variable c is declared such that it references type b but has a type of a, to call a method that
+does not exist in the superclass a but in the subclass b, we can use (b)a.method
+
+or in a more general way:
+
+(subclass)superclass_var.method
+
+if the same setup with a and b are formed and a method that is explicitly declared in both classes is called,
+the one in the subclass will be executed.
+
+if both a and b contain a method named "ysc", b.ysc will call the ysc method belonging to the b class
+
+all classes in java extend the Object superclass
+
+when an object is passed to a print method, a toString method on that object is implicity called
+by default, that prints out the object's hashcode. therefore, most of the time the toString
+method of a class is overriden to provide more useful properties to its return statement
+
+by default, the equals method checks if the variables refer to the same object instance
+
+overriding this method will allow the programmer to allow for checks within specific data fields
+or other comparisons that could be more useful in specific scenarios.
+
+equals method must have a parameter of type Object. Every object instance is also of type Object
+since they extend it.
+
+(USEFUL: instanceof operator, returns a bool value by checking if an object is a type of something)
 
 
 */

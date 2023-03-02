@@ -1,0 +1,15 @@
+/*
+any iterative solution can be expressed recursively and vice versa
+
+CallStackOveflowException thrown if base case is never reached. 
+
+binary search works on a sorted list where a value is tried to be found by "squishing" a lower
+and upper bound as indices
+
+merge sort can recursively sort elements in a list.
+
+merge sort separates a list to a left and right half until each sublist is of length 1, then orders
+lists of 2^n-1 where n denotes the "level" of sorting by comparing sorted halfs and doing an 
+optimized selection sort. since lists of length 1 are already "sorted", whenever a list is divided into
+a length of 1, the merging begins. 
+*/

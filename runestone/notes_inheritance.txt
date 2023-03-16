@@ -1,0 +1,17 @@
+bütün runestone'u okudum yeni bir bilgi var ise ekledim
+
+method overriding için public olarak tanımlanması gerekmektedir.
+
+compile time type değişken tipidir runtime tiype ise new ile yaratılan objenin tipidir
+
+arakladım:
+
+At compile time, the compiler uses the declared type to check that the methods you are trying to 
+use are available to an object of that type. The code won’t compile if the methods don’t exist 
+in that class or some parent class of that class. At run-time, the actual method that is 
+called depends on the actual type of the object
+
+Aynı zamanda:
+
+But at run-time, the Java interpreter will use the object’s actual subclass type 
+and call the subclass methods for any overridden methods. 

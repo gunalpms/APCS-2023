@@ -67,7 +67,7 @@ def getTraversals(input):
     print(" ", end = "", file = b)
     post(root)
 
-    return b.getvalue
+    return b.getvalue()
 
 
 

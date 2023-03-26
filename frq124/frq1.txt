@@ -1,0 +1,37 @@
+part a:
+
+public boolean conflictsWith(Appointment other) {
+    return this.getTime.overlapsWith(other.getTime)
+}
+
+part b:
+
+public void clearConflicts(Appointment appt) {
+    for (int i = apptList.length()-1; i>=0; i--) {
+        if appt.conflictsWith(apptList.get(i)) {
+            apptList.remove(i);
+        }
+    }
+}
+
+part c:
+
+public boolean addApt(Appointment appt, boolean emergency) {
+
+    if (emergency == true) {
+        clearConflicts(appt);
+        apptList.add(appt);
+        return true
+    }
+
+    else {
+        for (int i = apptList.length()-1; i>=0; i--) {
+            if appt.conflictsWith(apptList.get(i)) {
+                return false
+            }
+        }
+        apptList.add(appt);
+        return true;
+    }
+
+}

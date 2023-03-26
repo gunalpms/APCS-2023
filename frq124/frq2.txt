@@ -1,0 +1,24 @@
+part a:
+
+public double purchasePrice() {
+    return this.getListPrice() + this.getListPrice*taxRate;
+}
+
+public class Vehicle extends TaxableItem {
+    private int dealerCost;
+    private int dealerMarkup;
+
+    public Vehicle(int dc, int dm, int tr) {
+        super(tr);
+        this.dealerCost = dc;
+        this.dealerMarkup = dm;
+    }
+
+    public changeMarkup(int nm) {
+        this.dealerMarkup = nm;
+    }
+
+    public listPrice() {
+        return (dealerCost + dealerMarkup) + (dealerCost + dealerMarkup) * rate; // superdeki tax rate'i almamiz icin bir method yok 
+    }
+}

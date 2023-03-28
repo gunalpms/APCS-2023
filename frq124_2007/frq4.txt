@@ -1,0 +1,53 @@
+part a
+
+import java*;
+public class RandomPlayer extends Player {
+
+    private String name;
+
+    public RandomPlayer(String s) {
+        this.name = s;
+    }
+
+    public String getNextMove(GameState state) {
+        ArrayList<String> moves = state.getCurrentMoves();
+
+        int len = moves.length();
+        if (len == 0) {
+            return "no move";
+        }
+        else {
+            return moves.get(Math.random() * len);
+        }
+
+    }
+}
+
+part b
+
+public void play() {
+    System.out.println(state.toString())
+    boolean a = false;
+    while (!a) {
+
+        Player p = getCurrentPlayer();
+        String m = p.getNextMove();
+
+        System.out.println(p.getName());
+        System.out.println(m);
+
+        state.makeMove(m);
+
+        Player w = getWinner();
+        if (getWinner != null) {
+            System.out.println(state.getWinner().getName() + "wins")
+            a = true;
+        }
+
+        else {
+            System.out.println("Game ends / continues in a draw.") // ???? devam eden hamleler nerde
+        }
+
+    }
+}
+

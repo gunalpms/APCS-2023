@@ -1,0 +1,41 @@
+import java*;
+
+// part a
+public static boolean isSelfDivisor(int number) {
+
+    try {
+        int len = (int) (Math.log10(number) + 1);
+        ncopy = number;
+        for (i = 0; i < len; i++) {
+            int ncopy = number %10;
+            if ((number/ncopy)*ncopy != number) {
+                return false;
+        }
+    }
+    return true;
+
+    }
+
+    catch(Exception e) {
+        return false;
+    }
+
+}
+
+// part b
+
+public static int[] firstNumSelfDivisors(int start, int num) {
+
+    int[] res = new int[num]
+
+    int i = 0;
+    while (i < num) {
+        start++;
+        if (isSelfDivisor(start)) {
+            res[i] = start;
+            i++
+        }
+    }
+
+    return res;
+}

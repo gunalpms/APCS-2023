@@ -1,0 +1,9 @@
+mqtt iot cihazları için çoklu iletişim izinlerini yönetir. 
+
+pythonda cuda için taichi kullanılabilir.
+
+tarayıcı içinden serial okumasının doğrudan yapılabildiğini yeni öğrendim.
+
+dikkatimi çeken programlama dili olmadı sadece cudanın kendi diline zor demesi garibime gitti.
+high level dilden gpu kodu yazınca ortaya çıkan hataları ayıklamak daha zor olabilir. cudanın kendi dilini denemedim
+ama julia içerisinden baya sıkıntılı çalışıyordu, yüksek ihtimal python ile de benzer sorunlar yaşanabilir. 
